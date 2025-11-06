@@ -8,4 +8,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  resources :doctors, only: [:index, :show]
+  resources :pharmacies, only: [:index, :show]
+  resources :pharmacists, only: [:index, :show]
+  resources :users, only: [:create]
 end
