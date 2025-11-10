@@ -305,6 +305,14 @@ Devise.setup do |config|
   config.responder.error_status = :unprocessable_entity
   config.responder.redirect_status = :see_other
 
+  # Source - https://stackoverflow.com/a
+# Posted by Raymundus
+# Retrieved 2025-11-10, License - CC BY-SA 3.0
+
+
+  config.navigational_formats = []
+
+
   # ==> Configuration for :registerable
 
   # When set to false, does not sign a user in automatically after their password is
